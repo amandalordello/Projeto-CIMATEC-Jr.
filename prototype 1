@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Mobile-first base layout */
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 0.5em;
+        }
+
+        .catalog {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1em;
+            padding: 1em;
+        }
+
+        .catalog-item {
+            background-color: #f4f4f4;
+            padding: 1em;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .catalog-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 1em;
+            padding: 1em;
+        }
+
+        .carousel img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        /* Desktop layout */
+        @media (min-width: 768px) {
+            .navbar {
+                justify-content: space-around;
+            }
+
+            .catalog {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .carousel {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                overflow: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <h1>Minha Loja</h1>
+        <div>
+            <a href="#catalog">Catálogo</a>
+            <a href="#about">Sobre</a>
+            <a href="#contact">Contato</a>
+        </div>
+    </nav>
+
+    <!-- Carrossel de Imagens -->
+    <section class="carousel">
+        <img src="image1.jpg" alt="Imagem 1">
+        <img src="image2.jpg" alt="Imagem 2">
+        <img src="image3.jpg" alt="Imagem 3">
+        <img src="image4.jpg" alt="Imagem 4">
+    </section>
+
+    <!-- Catálogo de Produtos -->
+    <section id="catalog" class="catalog">
+        <div class="catalog-item">
+            <img src="product1.jpg" alt="Produto 1">
+            <h2>Produto 1</h2>
+            <p>Descrição do produto 1.</p>
+            <button>Comprar</button>
+        </div>
+        <div class="catalog-item">
+            <img src="product2.jpg" alt="Produto 2">
+            <h2>Produto 2</h2>
+            <p>Descrição do produto 2.</p>
+            <button>Comprar</button>
+        </div>
+        <div class="catalog-item">
+            <img src="product3.jpg" alt="Produto 3">
+            <h2>Produto 3</h2>
+            <p>Descrição do produto 3.</p>
+            <button>Comprar</button>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2024 Minha Loja. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
