@@ -1,28 +1,39 @@
-# Landing Page Responsiva (Mobile-First)
+# Landing Page Inspirada no CIMATEC Jr.
 
-Este projeto é uma landing page responsiva e simples para uma loja fictícia, construída com HTML e CSS. A página é desenvolvida com o design mobile-first, o que garante uma experiência fluida em dispositivos móveis, além de ser adaptável a telas maiores.
+Este projeto é uma landing page responsiva e moderna inspirada na identidade visual do CIMATEC Jr., uma empresa de consultoria e soluções tecnológicas. A página inclui uma navbar, um carrossel de imagens, uma seção de serviços, depoimentos, formulário de contato e um rodapé. A página é desenvolvida com o design mobile-first, o que garante uma experiência fluida em dispositivos móveis, tablets e desktops.
 
-## Funcionalidades
+## Índice
+- [Pré-requisitos](#pré-requisitos)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Funcionalidades](#funcionalidades)
+- [Instalação](#instalação)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
 
-- **Barra de Navegação**: Contém links para diferentes seções da página, exibindo o título da loja.
-- **Carrossel de Imagens**: Um carrossel de imagens horizontal no design mobile que se adapta para uma exibição em grade no desktop.
-- **Catálogo de Produtos**: Exibe produtos em uma estrutura de grade, com design que se adapta ao tamanho da tela.
-- **Rodapé**: Simples, com informações de direitos autorais da loja.
-
-## Tecnologias Utilizadas
-
-- **HTML**: Estrutura e organização dos elementos da página.
-- **CSS**: Estilos responsivos, grid e design mobile-first.
+## Pré-requisitos
+- Navegador moderno que suporte HTML e CSS.
 
 ## Estrutura do Projeto
+- `index.html`: Estrutura principal da página.
+- `style` (embutido no HTML): Estilos CSS para estilização de layout e componentes.
+- `script` (embutido no HTML): Código JavaScript para o funcionamento do carrossel de imagens.
 
-```plaintext
-project-folder/
-│
-├── index.html          # Arquivo principal da página web
-├── README.md           # Documentação do projeto
-└── images/             # Pasta com imagens usadas no catálogo e no carrossel
-    ├── image1.jpg
-    ├── image2.jpg
-    ├── product1.jpg
-    └── ...
+## Funcionalidades
+1. **Navbar Responsiva**: Contém logo, links para navegação interna e botão "Fale Conosco".
+2. **Carrossel de Imagens**: Rotaciona imagens com botões de navegação.
+3. **Banner Principal**: Exibe uma breve introdução sobre a empresa e um botão para os serviços.
+4. **Seção de Serviços**: Mostra serviços oferecidos, como desenvolvimento web, consultoria em TI, e suporte técnico.
+5. **Seção Sobre Nós**: Breve descrição da empresa.
+6. **Depoimentos**: Comentários de clientes para aumentar a credibilidade.
+7. **Formulário de Contato**: Formulário básico para receber mensagens de contato.
+8. **Rodapé**: Contém informações de direitos autorais.
+
+## Instalação
+1. Clone este repositório para o seu computador.
+2. Abra o arquivo index.html em seu navegador web preferido.
+
+## Tecnologias Utilizadas
+- **HTML**: Estrutura e organização dos elementos da página.
+- **CSS**: Estilização visual e responsividade da página (Estilos responsivos, grid e design mobile-first).
+- **JavaScript**: Funções para controle do carrossel de imagens.
+
+Este README descreve a estrutura, funcionalidades e instruções de uso da landing page.
