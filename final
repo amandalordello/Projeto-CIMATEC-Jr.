@@ -1,0 +1,354 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Inspirada na CIMATEC Jr.</title>
+    <style>
+        /* Estilos Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #003366;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .navbar .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .btn-contact {
+            background-color: #cc0000;
+            padding: 8px 12px;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        /* Carrossel de Imagens */
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            margin: 20px 0;
+            position: relative;
+            border-radius: 0px;
+        }
+        .carousel img {
+            min-width: 100%;
+            transition: transform 0.5s ease;
+            border-radius: 0px;
+        }
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .carousel-buttons button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        /* Banner Principal */
+        .banner {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }
+        .banner h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .banner p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .btn-main {
+            background-color: #cc0000;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* Seção de Serviços */
+        .services {
+            padding: 30px 0;
+            text-align: center;
+            background-color: #e6f0ff;
+        }
+        .services h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #003366;
+        }
+        .services-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .service {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            color: #003366;
+            text-align: center;
+        }
+        .service h3 {
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        /* Sobre */
+        .about {
+            background-color: #003366;
+            padding: 30px 0;
+            text-align: center;
+            color: #ffffff;
+        }
+        .about h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .about p {
+            margin-top: 10px;
+        }
+
+        /* Depoimentos */
+        .testimonials {
+            padding: 30px 0;
+            background-color: #e6f0ff;
+            text-align: center;
+        }
+        .testimonials h2 {
+            margin-bottom: 15px;
+            font-size: 22px;
+            color: #003366;
+        }
+        .testimonial {
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        /* Contato */
+        .contact {
+            padding: 30px 0;
+            text-align: center;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn-submit {
+            background-color: #cc0000;
+            padding: 10px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Responsividade para tablets e desktops */
+        @media (min-width: 768px) {
+            .navbar .container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .nav-links {
+                flex-direction: row;
+            }
+            .services-list {
+                flex-direction: row;
+            }
+            .banner h2 {
+                font-size: 36px;
+            }
+            .banner p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <img src="https://cimatecjr.com.br/assets/img/logo2.png" alt="Logo" style="width: 170px; height: 70px;">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="btn-contact">Fale Conosco</a>
+        </div>
+    </header>
+
+    <!-- Carrossel de Imagens -->
+    <section class="carousel" id="carousel">
+        <img src="https://cimatecjr.com.br/upload/banner/DlWfDrcEnKo0xUy8KB04xhius6jszGSq8ue7b9MC.jpg" alt="Imagem 1">
+        <img src="https://cimatecjr.com.br/upload/banner/hlSEYKe6y5aQJvP0V2mbktVWznB5j5rwIlLVDM2r.jpg" alt="Imagem 2">
+        <div class="carousel-buttons">
+            <button onclick="previousSlide()">&#10094;</button>
+            <button onclick="nextSlide()">&#10095;</button>
+        </div> 
+    </section>
+
+    <!-- Banner Principal -->
+    <section id="home" class="banner">
+        <div class="container">
+            <h2>Consultoria e Soluções Tecnológicas</h2>
+            <p>Oferecemos serviços especializados para ajudar sua empresa a alcançar novos patamares.</p>
+            <a href="#services" class="btn-main">Nossos Serviços</a>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Serviços</h2>
+            <div class="services-list">
+                <div class="service">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Soluções completas e personalizadas para o seu site ou sistema.</p>
+                </div>
+                <div class="service">
+                    <h3>Consultoria em TI</h3>
+                    <p>Estratégias para otimizar e modernizar a tecnologia da sua empresa.</p>
+                </div>
+                <div class="service">
+                    <h3>Suporte Técnico</h3>
+                    <p>Suporte confiável para manter suas operações em pleno funcionamento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma empresa de consultoria focada em soluções tecnológicas que impulsionam o crescimento e a eficiência dos nossos clientes.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Depoimentos -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Depoimentos</h2>
+            <div class="testimonial">
+                <p>"Ajudaram a transformar nossa ideia em realidade com um sistema eficiente e personalizado."</p>
+                <span>- Cliente Satisfeito</span>
+            </div>
+            <div class="testimonial">
+                <p>"Serviço impecável, sempre prontos para nos atender e resolver nossos problemas."</p>
+                <span>- Outro Cliente Satisfeito</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="E-mail" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CIMATEC Jr. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Funções JavaScript para o carrossel
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel img');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.transform = `translateX(${100 * (-index)}%)`;
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function previousSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
