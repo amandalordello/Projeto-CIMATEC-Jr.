@@ -28,6 +28,7 @@ Este projeto é uma landing page responsiva e moderna inspirada na identidade vi
 8. **Rodapé**: Contém informações de direitos autorais.
 
 ## Instalação
+Para visualizar a landing page em sua máquina local, siga os passos abaixo:
 1. Clone este repositório para o seu computador.
 2. Abra o arquivo index.html em seu navegador web preferido.
 
