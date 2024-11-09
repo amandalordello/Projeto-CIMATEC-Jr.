@@ -18,14 +18,14 @@ Este projeto é uma landing page responsiva e moderna inspirada na identidade vi
 - `script` (embutido no HTML): Código JavaScript para o funcionamento do carrossel de imagens.
 
 ## Funcionalidades
-1. **Navbar Responsiva**: Contém logo, links para navegação interna e botão "Fale Conosco".
-2. **Carrossel de Imagens**: Rotaciona imagens com botões de navegação.
-3. **Banner Principal**: Exibe uma breve introdução sobre a empresa e um botão para os serviços.
-4. **Seção de Serviços**: Mostra serviços oferecidos, como desenvolvimento web, consultoria em TI, e suporte técnico.
+1. **Navbar Responsiva**: Contém logo, links para navegação interna e botão "Fale Conosco" com foco na experiência do usuário.
+2. **Carrossel de Imagens**: Rotaciona imagens de destaque com botões de navegação.
+3. **Banner Principal**: Exibe uma breve introdução sobre a empresa e um botão para acessar os serviços.
+4. **Seção de Serviços**: Apresenta os principais serviços oferecidos, como desenvolvimento web, consultoria em TI, e suporte técnico, com efeitos para interação.
 5. **Seção Sobre Nós**: Breve descrição da empresa.
-6. **Depoimentos**: Comentários de clientes para aumentar a credibilidade.
+6. **Depoimentos**: Comentários de clientes para aumentar a credibilidade e confiança.
 7. **Formulário de Contato**: Formulário básico para receber mensagens de contato.
-8. **Rodapé**: Contém informações de direitos autorais.
+8. **Rodapé**: Inclui informações de direitos autorais.
 
 ## Instalação
 Para visualizar a landing page em sua máquina local, siga os passos abaixo:
@@ -35,6 +35,6 @@ Para visualizar a landing page em sua máquina local, siga os passos abaixo:
 ## Tecnologias Utilizadas
 - **HTML**: Estrutura e organização dos elementos da página.
 - **CSS**: Estilização visual e responsividade da página (Estilos responsivos, grid e design mobile-first).
-- **JavaScript**: Funções para controle do carrossel de imagens.
+- **JavaScript**: Funções para controle do carrossel de imagens e interações com o usuário.
 
 Este README descreve a estrutura, funcionalidades e instruções de uso da landing page.
